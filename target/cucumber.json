@@ -1,0 +1,446 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-27T17:32:19.089Z",
+        "line": 7,
+        "name": "Validar o return code 200",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-get;validar-o-return-code-200",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2550795500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "efetuar uma requisição GET válida",
+            "match": {
+              "location": "GetRequestSteps.efetuar_uma_requisição_get_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 5384200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validar que o return code da requisição GET é igual a 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 54
+                }
+              ],
+              "location": "GetRequestSteps.validar_que_o_return_code_da_requisição_get_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@get"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:21.794Z",
+        "line": 12,
+        "name": "Validar o return code 404",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-get;validar-o-return-code-404",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 108350800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "efetuar uma requisição GET inválida",
+            "match": {
+              "location": "GetRequestSteps.efetuar_uma_requisição_get_inválida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 83100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "validar que o return code da requisição GET é igual a 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 54
+                }
+              ],
+              "location": "GetRequestSteps.validar_que_o_return_code_da_requisição_get_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@get"
+          },
+          {
+            "name": "@cenario_negativo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:21.904Z",
+        "line": 17,
+        "name": "Validar o número de itens no Response",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-get;validar-o-número-de-itens-no-response",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 108934400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "efetuar uma requisição GET válida",
+            "match": {
+              "location": "GetRequestSteps.efetuar_uma_requisição_get_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 256582500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "validar que o número de itens na lista é igual a 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 49
+                }
+              ],
+              "location": "GetRequestSteps.validar_que_o_número_de_itens_na_lista_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@get"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:22.271Z",
+        "line": 22,
+        "name": "Validar que o Set-Cookie está preenchido no Header",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-get;validar-que-o-set-cookie-está-preenchido-no-header",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 100821800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "efetuar uma requisição GET válida",
+            "match": {
+              "location": "GetRequestSteps.efetuar_uma_requisição_get_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 1288800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "validar que o Set-Cookie está preenchido no Header",
+            "match": {
+              "location": "GetRequestSteps.validar_que_o_set_cookie_está_preenchido_no_header()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@get"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      }
+    ],
+    "name": "Validar o funcionamento da API JSONPlaceholder Método GET",
+    "description": "",
+    "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-get",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/resources/features/get.feature",
+    "tags": [
+      {
+        "name": "@testes_api",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-27T17:32:22.376Z",
+        "line": 7,
+        "name": "Validar o return code 201",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-post;validar-o-return-code-201",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 377608500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "efetuar uma requisição POST válida",
+            "match": {
+              "location": "PostRequestSteps.efetuar_uma_requisição_post_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 96500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validar que o return code da requisição POST é igual a 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "PostRequestSteps.validar_que_o_return_code_da_requisição_post_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@post"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:22.759Z",
+        "line": 12,
+        "name": "Validar o return code 404",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-post;validar-o-return-code-404",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 344987600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "efetuar uma requisição POST inválida",
+            "match": {
+              "location": "PostRequestSteps.efetuar_uma_requisição_post_inválida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 77500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "validar que o return code da requisição POST é igual a 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "PostRequestSteps.validar_que_o_return_code_da_requisição_post_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@post"
+          },
+          {
+            "name": "@cenario_negativo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:23.105Z",
+        "line": 17,
+        "name": "Validar que o novo registro ocupa o id 101",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-post;validar-que-o-novo-registro-ocupa-o-id-101",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 331032700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "efetuar uma requisição POST válida",
+            "match": {
+              "location": "PostRequestSteps.efetuar_uma_requisição_post_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 473071500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "validar que o id do novo registro é igual a 101",
+            "match": {
+              "arguments": [
+                {
+                  "val": "101",
+                  "offset": 44
+                }
+              ],
+              "location": "PostRequestSteps.validar_que_o_id_do_novo_registro_é_igual_a(Integer)"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@post"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-27T17:32:23.911Z",
+        "line": 22,
+        "name": "Validar que o Location está preenchido no Header",
+        "description": "",
+        "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-post;validar-que-o-location-está-preenchido-no-header",
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 336709900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "efetuar uma requisição POST válida",
+            "match": {
+              "location": "PostRequestSteps.efetuar_uma_requisição_post_válida()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 135900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "validar que o Location está preenchido no Header",
+            "match": {
+              "location": "PostRequestSteps.validar_que_o_location_está_preenchido_no_header()"
+            },
+            "keyword": "Então "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@testes_api"
+          },
+          {
+            "name": "@post"
+          },
+          {
+            "name": "@cenario_positivo"
+          }
+        ]
+      }
+    ],
+    "name": "Validar o funcionamento da API JSONPlaceholder Método POST",
+    "description": "",
+    "id": "validar-o-funcionamento-da-api-jsonplaceholder-método-post",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/java/resources/features/post.feature",
+    "tags": [
+      {
+        "name": "@testes_api",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
